@@ -6,6 +6,7 @@ DELETE ja
 MATCH(ja {name: "Ja Morant"})
 DETACH DELETE ja
 
+
 // Delete relationship
 MATCH(joel {name: "Joel Embiid"}) - [rel:PLAYS_FOR] -> (:TEAM)
 DELETE rel
